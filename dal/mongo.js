@@ -36,7 +36,7 @@ function readOneById(info) {
     return info.collection.findOne({_id: ObjectID(info.id)});
 }
 
-/*function createOne(info) {
+function createOne(info) {
     return info.collection.insertOne(info.doc);
 }
 
@@ -51,14 +51,13 @@ function changeOne(info) {
 function deleteOne(info) {
     return info.collection.deleteOne({ _id: ObjectID(info.id) }); 
 }
-*/
+
 module.exports.connect = connect;
 module.exports.close = close;
 module.exports.readAll = readAll;
 module.exports.readOne = readOne;
 module.exports.readOneById = readOneById;
-/*module.exports.createOne = createOne;
+module.exports.createOne = createOne;
 module.exports.replaceOne = replaceOne;
 module.exports.changeOne = changeOne;
 module.exports.deleteOne = deleteOne;
-*/
